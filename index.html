@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holi Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop>
+        <source src="holi-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="playMusic()">Play Music</button>
+
+    <canvas id="holiCanvas"></canvas>
+
+    <!-- Animated SVG People -->
+    <div class="person" id="person1" onclick="throwColor(event, '255, 0, 0')">
+        <img src="person1.png" alt="Person 1">
+    </div>
+
+    <div class="person" id="person2" onclick="throwColor(event, '0, 255, 0')">
+        <img src="person2.png" alt="Person 2">
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
