@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #f5e1a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: #ff0080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.person {
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+}
+
+#person1 {
+    left: 20%;
+}
+
+#person2 {
+    right: 20%;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
